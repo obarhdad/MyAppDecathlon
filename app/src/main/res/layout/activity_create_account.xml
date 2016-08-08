@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.decathlon.obarhdad.myappdecathlon.MainActivity">
+
+    <ImageView
+        android:id="@+id/image_decathlon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:src="@mipmap/ic_decathlon_logo" />
+
+    <LinearLayout
+        android:id="@+id/linearText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_decathlon"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="@string/person_first_name_hint"
+                android:textColor="@android:color/black"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/pFirstName"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/rectangle"
+                android:hint="@string/person_first_name_hint"
+                android:inputType="textCapSentences"
+                android:padding="3dp"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="@string/person_last_name_hint"
+                android:textColor="@android:color/black"
+                android:textSize="14dp" />
+
+
+            <EditText
+                android:id="@+id/pLastName"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/rectangle"
+                android:hint="@string/person_last_name_hint"
+                android:inputType="textCapSentences"
+                android:padding="3dp"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="@string/person_email_hint"
+                android:textColor="@android:color/black"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/pEmail"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/rectangle"
+                android:hint="@string/person_email_hint"
+                android:inputType="textEmailAddress"
+                android:padding="3dp"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="@string/person_password_hint"
+                android:textColor="@android:color/black"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/pPassword"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/rectangle"
+                android:hint="@string/person_password_hint"
+                android:inputType="textPassword"
+                android:padding="3dp"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="@string/person_confirm_password_hint"
+                android:textColor="@android:color/black"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/pConfirmPassword"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/rectangle"
+                android:hint="@string/person_confirm_password_hint"
+                android:padding="3dp"
+                android:inputType="textPassword"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linearText"
+        android:layout_margin="10dp">
+
+        <Button
+            android:id="@+id/bNext"
+            android:layout_width="@dimen/activity_layout_with_l"
+            android:layout_height="@dimen/activity_layout_height_l"
+            android:layout_centerInParent="true"
+            android:background="@color/colorButton"
+            android:text="@string/person_Next"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+</RelativeLayout>

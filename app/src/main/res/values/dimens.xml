@@ -1,0 +1,5 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_layout_with_l">240dp</dimen>
+    <dimen name="activity_layout_height_l">65dp</dimen>
+</resources>
